@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">RadarUltrasonic</string>
+    <string name="connect">Connect</string>
+    <string name="On_Off">Sweep</string>
+    <string name="disconnect">disconnect</string>
+    <string name="polar_coordinates">Polar Coordinates:</string>
+    <string name="auto">Auto</string>
+    <string name="manual">Manual</string>
+    <string name="_0_360">0 - 360</string>
+    <string name="Warn0_360">Make sure to be connected and enter a number between 0 and 360</string>
+    <string name="Disconnected">Disconnected</string>
+    <string name="WarnNotSupportBT">Device does not support Bluetooth</string>
+    <string name="WarnEnBT">Allow to enable Bluetooth</string>
+    <string name="InfoBTEnabled">Bluetooth is already enabled</string>
+    <string name="InfoBTSuccesEn">Bluetooth successfully enabled</string>
+    <string name="WarnBTMustEn">Bluetooth has to be enabled</string>
+    <string name="InfoSuccessConnected">Successfully connected</string>
+    <string name="WarnFailedConnection">Failed to connect. Check if your target device bluetooth is on.</string>
+    <string name="Distance1">Distance1:</string>
+    <string name="Angle1">Angle1:</string>
+    <string name="Distance2">Distance2:</string>
+    <string name="Angle2">Angle2:</string>
+    <string name="title_activity_log">Coordinates Log:</string>
+    <string name="log_file">Log Report</string>
+    <string name="action">Menu</string>
+    <string name="about_item_string">About</string>
+    <string name="help_item_string">Help</string>
+    <string name="exit_item_string">Exit</string>
+    <string name="license_item_string">License</string>
+
+    <string name="about_string">Version: 1.0\n\nDeveloper: Vahid Saljooghi\n\nContact:\n
+                                vahid_saljooghi@yahoo.com\n\nDownload Source:\n
+                                https://github.com/vsaljooghi/RadarUltrasonic\n
+    </string>
+
+    <string name="help_string">0. Choose HC-05 bluetooth device from dropdown menu.\n\n
+                                1. Press Connect button.\n\n
+                                2. After successful connection, one can choose between Auto or Manual.\n\n
+                                3. By choosing Auto and checking Sweep checkbox, radar sweeps 360&#xb0;.\n\n
+                                4. Deselecting Sweep will stop rotation.\n\n
+                                5. By choosing Manual, one can do measurements in arbitrary angle.\n\n
+                                6. Log Report button can be used to querry measured coordinates at anytime.
+    </string>
+
+</resources>

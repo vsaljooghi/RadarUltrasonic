@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">رادار فراصوت</string>
+    <string name="connect">اتصال</string>
+    <string name="On_Off">جاروب</string>
+    <string name="disconnect">قطع ارتباط</string>
+    <string name="polar_coordinates">مختصات قطبی:</string>
+    <string name="auto">خودکار</string>
+    <string name="manual">دستی</string>
+    <string name="_0_360">۰ - ۳۶۰</string>
+    <string name="Warn0_360">از اتصال اطمینان حاصل کرده و عددی بین ۰ تا ۳۶۰ وارد نمایید!</string>
+    <string name="Disconnected">اتصال قطع شد.</string>
+    <string name="WarnNotSupportBT">گوشی بلوتوث را پشتیبانی نمی کند.</string>
+    <string name="WarnEnBT">لطفا اجازه فعال شدن بلوتوث را بدهید.</string>
+    <string name="InfoBTEnabled">بلوتوث قبلا فعال شده است.</string>
+    <string name="InfoBTSuccesEn">بلوتوث با موفقیت فعال شد.</string>
+    <string name="WarnBTMustEn">بلوتوث می بایست فعال شود.</string>
+    <string name="InfoSuccessConnected">اتصال موفقیت آمیز بود!</string>
+    <string name="WarnFailedConnection">اتصال برقرار نشد. ممکن است بلوتوث دستگاه مقصد خاموش باشد.</string>
+    <string name="Distance1">فاصله۱:</string>
+    <string name="Angle1">زاویه۱:</string>
+    <string name="Distance2">فاصله۲:</string>
+    <string name="Angle2">زاویه۲:</string>
+    <string name="title_activity_log">گزارش مختصات ها:</string>
+    <string name="log_file">گزارش مختصات</string>
+    <string name="action">منو</string>
+    <string name="about_item_string">درباره</string>
+    <string name="help_item_string">راهنما</string>
+    <string name="exit_item_string">خروج</string>
+    <string name="license_item_string">پروانه نرم افزار</string>
+
+    <string name="about_string">نسخه:۱.۰ \n\n برنامه نویس: وحید سلجوقی \n\n تماس: \n
+        vahid_saljooghi@yahoo.com
+        \n\n
+        دانلود کد:\n
+        https://github.com/vsaljooghi/RadarUltrasonic\n
+    </string>
+
+    <string name="help_string"> 0- سخت افزار بلوتوث HC-05 را از منوی آبشاری انتخاب نمایید. \n\n
+                            ۱- دکمه اتصال را فشار دهید. \n\n
+                            ۲- در صورت موفقیت آمیز بودن اتصال می توان یکی از دو گزینه خودکار یا دستی را انتخاب نمود. \n\n
+                            ۳- در صورت انتخاب خودکار و برگزیدن جاروب، رادار به صورت خودکار۳۶۰ درجه را رصد می کند. \n\n
+                            ۴- برداشتن گزینه جاروب چرخش و رصد را متوقف می کند. \n\n
+                            ۵- در صورت انتخاب گزینه دستی می توان اندازه گیری را در زاویه دلخواه انجام داد. \n\n
+                    ۶- دکمه گزارش مختصات مختصات های اندازه گیری شده را نشان می دهد.
+    </string>
+</resources>

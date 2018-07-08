@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action"
+        android:title="@string/action"
+        android:icon="@drawable/ic_action_menu"
+        android:showAsAction="always">
+
+        <!-- "action" submenu -->
+
+        <menu>
+            <item android:id="@+id/about_item"
+                android:title="@string/about_item_string"
+                android:icon="@drawable/ic_action_info"/>
+
+            <item android:id="@+id/help_item"
+                android:title="@string/help_item_string"
+                android:icon="@drawable/ic_action_help"/>
+
+            <item android:id="@+id/license_item"
+                android:title="@string/license_item_string"
+                android:icon="@drawable/ic_action_license"/>
+
+            <item android:id="@+id/exit_item"
+                android:title="@string/exit_item_string"
+                android:icon="@drawable/ic_action_exit"/>
+        </menu>
+
+    </item>
+
+</menu>

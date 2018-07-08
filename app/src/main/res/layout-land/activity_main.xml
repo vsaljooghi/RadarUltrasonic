@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MainActivityLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbg"
+    tools:context="com.home.vas.RadarUltrasonic.MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <com.home.vas.RadarUltrasonic.RadarView
+        android:id="@+id/radarView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/Black"
+        android:foregroundGravity="center_horizontal"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/TitleCoordinates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/polar_coordinates"
+        android:textSize="15sp"
+        android:textColor="@color/Black"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/radarView"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <View
+        android:id="@+id/DividerView"
+        style="@style/Divider"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/TitleCoordinates"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/radarView"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/textViewCoordinates"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/Black"
+        android:typeface="monospace"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/DividerView"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/radarView"
+        android:layout_marginLeft="8dp" />
+
+    <Spinner
+        android:id="@+id/pairedDevicesSpinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:spinnerMode="dialog"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCoordinates"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/radarView"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <Button
+        android:id="@+id/connectButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/connect"
+        android:textSize="12sp"
+        android:textColor="@color/Black"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/pairedDevicesSpinner"
+        app:layout_constraintLeft_toRightOf="@+id/radarView"
+        android:layout_marginLeft="8dp" />
+
+    <Button
+        android:id="@+id/logFileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/log_file"
+        android:textSize="12sp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/pairedDevicesSpinner"
+        app:layout_constraintLeft_toRightOf="@+id/connectButton"
+        android:layout_marginLeft="8dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:checked="false"
+        android:textColor="@color/Black"
+        app:layout_constraintLeft_toRightOf="@+id/radarView"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/connectButton"
+        app:layout_constraintRight_toLeftOf="@+id/layoutRadioAction"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintHorizontal_bias="0.008"
+        app:layout_constraintVertical_bias="0.474">
+
+        <RadioButton
+            android:id="@+id/radio_auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:saveEnabled="false"
+            android:text="@string/auto"
+            android:textColor="@color/Black"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radio_manual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:saveEnabled="false"
+            android:text="@string/manual"
+            android:textColor="@color/Black"
+            android:textSize="12sp" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/layoutRadioAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logFileButton">
+
+        <CheckBox
+            android:id="@+id/On_OffCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/On_Off"
+            android:checked="false"
+            android:saveEnabled="false"
+            android:textColor="@color/Black"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/editTextAngle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:saveEnabled="false"
+            android:gravity="center"
+            android:hint="@string/_0_360"
+            android:inputType="number"
+            android:textColor="#080337"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
