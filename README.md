@@ -1,5 +1,5 @@
 
-Android mobile application in Java and its corrsponding firmware written in C(for Arduino Uno), is a prototype of an ultrasonic radar that communicates through bluetooth with handset smartphone. It supports English and Persian in both landscape and portrait screen mode.
+Android mobile application in Java and its related firmware written in C(for Arduino Uno), is a prototype of an ultrasonic radar that communicates through bluetooth with handset smartphone. It supports English and Persian in both landscape and portrait screen mode.
 
 Hardware Bill of Materials:
 
